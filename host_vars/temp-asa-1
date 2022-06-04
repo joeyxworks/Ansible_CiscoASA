@@ -1,7 +1,7 @@
 ---
-ansible_host: 10.73.2.146
+ansible_host: <IP address/Hostname>
 ansible_user: "{{ username }}"
-ansible_password: "{{ dcmcpass }}"
+ansible_password: "{{ password1 }}"
 #ansible_become: yes
 #ansible_become_method: ansible.netcommon.enable
 #ansible_become_pass: "{{ password }}"

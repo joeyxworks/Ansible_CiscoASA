@@ -2,7 +2,7 @@
 - name: ASA ACL
   connection: network_cli
   gather_facts: false
-  hosts: dexa-asa01
+  hosts: all
   become: yes
   become_method: enable
   
@@ -16,5 +16,5 @@
     - name: acl for new speedup service
       cisco.asa.asa_config:
         lines:
-        - access-list DehongStaffPermit extended permit ip object-group DehongStaffNetwork host 1.1.1.1 inactive
+        - access-list temp_acl extended permit ip object-group temp_og host 1.1.1.1 inactive
         save: yes
