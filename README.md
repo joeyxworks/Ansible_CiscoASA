@@ -1,0 +1,2 @@
+# Network automation with Ansible
+This repository shows the Ansible configuration for managing Cisco ASA firewall, not only show information with module cisco.asa.asa_command but also includes configuration modify with module cisco.asa.asa_config
