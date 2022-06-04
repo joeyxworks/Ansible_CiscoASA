@@ -1,0 +1,10 @@
+---
+ansible_host: 10.73.2.146
+ansible_user: "{{ username }}"
+ansible_password: "{{ dcmcpass }}"
+#ansible_become: yes
+#ansible_become_method: ansible.netcommon.enable
+#ansible_become_pass: "{{ password }}"
+ansible_connection: ansible.netcommon.network_cli
+ansible_network_os: cisco.asa.asa
+ansible_python_interpreter: python

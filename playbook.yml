@@ -1,0 +1,20 @@
+---
+- name: Show version for the ASA at DEXA
+  connection: network_cli
+  gather_facts: false
+  hosts: all
+
+  vars_files:
+    - defaults/credentials.yml
+
+  collections:
+    - cisco.asa
+
+  tasks:
+    - name: Show the ASA version
+      cisco.asa.asa_command:
+        commands:
+        - show version
+        - show memory
+
+      register: output
